@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patience Test 🧘‍♀️</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-patient">
+    <div class="container" id="mainContainer">
+        <h1>Patience Test</h1>
+        <p id="instruction">Do absolutely NOTHING until the timer reaches -5!</p>
+
+        <div class="emoji-display breathe" id="emoji">🧘‍♀️</div>
+
+        <div id="timerDisplay">30</div>
+
+        <div class="message" id="message">Just relax and don't touch the screen...</div>
+
+        <div class="btns">
+            <button class="continue-btn" id="continueBtn" onclick="goNext(event)">You Passed! Continue ➜</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="warningOverlay">
+        <div class="warning-panel">
+            <h2 id="warningTitle">Oops! 🛑</h2>
+            <p id="warningText">I said wait until the timer comes to -5! Why did you click?!</p>
+            <button id="warningBtn" onclick="closeWarning(event)">Try Again (+10s Penalty)</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

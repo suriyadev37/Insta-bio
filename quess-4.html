@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 4: Mystery Number 🤫</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-quess">
+
+    <div class="puzzle-card">
+        <h2>Find the Number 🕵️‍♀️</h2>
+        <p>Guess the secret number between 1 and 100.</p>
+
+        <div class="emoji-display" id="reactionEmoji">🤔</div>
+
+        <div class="health-bar" id="healthBar">
+            <span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span><span class="heart">❤️</span>
+        </div>
+
+        <input type="number" id="guessInput" placeholder="??" inputmode="numeric">
+        <button id="guessBtn" onclick="checkGuess()">Take a Guess ➜</button>
+
+        <div id="feedback">You have 7 tries. Don't mess up.</div>
+        <div class="hint-text" id="hintBox"></div>
+    </div>
+
+    <div class="overlay" id="winOverlay">
+        <div class="panel win-panel" id="winPanel">
+            <span class="panel-icon">🎉</span>
+            <h2 style="color: #4CAF50;">You Survived!</h2>
+            <p id="winMessage" style="margin-top: 10px; color: #555; font-weight: bold;"></p>
+            <p id="snarkyWinText" style="font-size: 14px; color: #888; font-style: italic; margin-top: 10px;"></p>
+            <button class="next-btn" onclick="goToNextPage()">Unlock Next Page ✨</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="loseOverlay">
+        <div class="panel lose-panel" id="losePanel">
+            <span class="panel-icon" style="animation: none;">💀</span>
+            <h2 style="color: #ff4d4d;">GAME OVER</h2>
+            <p id="loseMessage" style="margin-top: 10px; color: #555; font-weight: bold;"></p>
+            <p style="font-size: 14px; color: #888; font-style: italic; margin-top: 10px;">Your brain needs a reboot.</p>
+            <button class="retry-btn" onclick="location.reload()">Try Again 🔄</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

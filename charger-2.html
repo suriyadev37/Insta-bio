@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charge Me Up!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-charger">
+    <div class="container">
+        <h1>Power Up! ⚡</h1>
+        <p id="instruction">Battery power is very low. Please connect your mobile charger and charge the battery to continue to the next page.</p>
+        <p id="instruction">(Note : Use the Chrome Browser)</p>
+        <div class="battery-container">
+            <div class="battery-body">
+                <div class="battery-fill" id="batteryFill"></div>
+                <div class="battery-text" id="batteryText">0%</div>
+            </div>
+            <div class="battery-tip"></div>
+        </div>
+
+        <div class="message" id="message">Waiting for power... 🔌</div>
+
+        <div class="btns">
+            <button class="continue-btn" id="continueBtn" onclick="goNext()">Continue ➜</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

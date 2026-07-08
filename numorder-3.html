@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Puzzle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-numorder">
+    <div class="container">
+        <h1>Memory Test 🧠</h1>
+        <p>Win the game for going to the next Page.</p>
+        <p>Memorize the number order, then click them in order from 1 to 9.</p>
+        <p id="countdown">Tap below Start to Begin!</p>
+        <div class="grid" id="grid"></div>
+        <div class="message" id="message"></div>
+        <div class="btns">
+            <button id="startBtn" onclick="startGame()">Start / Restart</button>
+            <button class="continue-btn" id="continueBtn" onclick="goNext()">Continue ➜</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

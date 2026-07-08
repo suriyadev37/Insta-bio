@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-final">
+
+    <!-- Magic floating bubbles -->
+    <div class="bg-bubbles" id="bubbles"></div>
+
+    <div class="final-container">
+        <!-- Step 1: The Interactive Gift -->
+        <div id="giftSection">
+            <h1>You've reached the end! 🌟</h1>
+            <p>You played so well! I have a small gift just for you.</p>
+
+            <div class="gift-box" id="giftBox" onclick="handleGiftClick()">🎁</div>
+
+            <p id="gift-hint">(Tap the gift to open)</p>
+        </div>
+
+        <!-- Step 2: The Grand Reveal -->
+        <div class="hidden-content" id="revealSection">
+            <h1>Surprise! 💖</h1>
+
+            <div class="photo-frame">
+                <img src="https://cdn-icons-png.flaticon.com/512/4359/4359642.png" alt="Happy Emoji">
+            </div>
+
+            <p>
+                You actually made it! 🏆
+                <br><br>
+                After proving your memory, doing three-digit math, holding your breath for a shy emoji, surviving my patience test, AND writing me a sweet message... you are finally here. All this effort just for an Instagram bio!
+                <br><br>
+                Honestly? I am officially impressed by your stubbornness and dedication. Since you made it all the way to the end without giving up... I think I like you! 💕
+            </p>
+
+            <span class="vip-badge">You're officially a VIP! 🌸</span>
+            <br>
+            <a href="https://share.google/VkBbTW0ZSH9s5PKTY" class="replay-btn">Unlock My Bio ✨</a>
+        </div>
+    </div>
+
+    <!-- Hidden canvas for confetti -->
+    <canvas id="confetti" style="position:fixed; top:0; left:0; pointer-events:none; z-index:100;"></canvas>
+
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For Me 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-message">
+    <div class="container" id="box">
+
+        <div id="formView">
+            <img src="img/sight.png" width="130px" alt="Image">
+            <h1>The Easiest Level! 💖</h1>
+            <p id="subtitle">This level is very simple! Just tell me something about yourself, or tell me something about me. Say anything you want to finish this and go to the next page! 💕</p>
+            <textarea id="userMessage" placeholder="Who are you? Or what do you think of me? Type here..." autocomplete="off"></textarea>
+            <button id="sendBtn" onclick="sendMessage()">Send & Finish 💌</button>
+        </div>
+
+        <div id="successView" style="display: none;" class="fade-in">
+            <img src="img/flower.png" width="170px" alt="Image">
+            <h1>Thank You! ✨</h1>
+            <p>Your message has been safely delivered to Me...! 💖</p>
+            <button onclick="goToNext()">Next ✨</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

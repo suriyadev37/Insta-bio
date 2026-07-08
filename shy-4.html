@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shy Puzzle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-shy">
+
+    <div class="container" id="gameContainer">
+        <h1>I'm Too Shy! 🫣</h1>
+
+        <div class="emoji-container">
+            <div class="emoji-display" id="emoji">🫣</div>
+        </div>
+
+        <p id="instruction">
+            I have the next button, but I'm too shy to show it while you are looking!<br><br>
+            <strong>Switch tabs or minimize your browser for 10 seconds.</strong>
+        </p>
+
+        <div class="message" id="message">I'll know if you peek... 👀</div>
+
+        <div class="btns">
+            <button class="continue-btn" id="continueBtn" onclick="goNext(event)">You did it! Continue ➜</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="warningOverlay">
+        <div class="warning-panel">
+            <h2>Caught You! 📸</h2>
+            <p>Woah, you came back way too early! 🏃💨 <br><br>I'm not ready yet! Please give me the full <strong>10 seconds</strong> so I can bring the button out without you staring! 🙈💕</p>
+            <button onclick="closeWarning(event)">Sorry, I'll close my eyes!</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
