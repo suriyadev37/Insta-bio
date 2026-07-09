@@ -178,7 +178,7 @@ if (document.body.classList.contains('page-calc')) {
 
       if (parseInt(val) === correctAnswer) {
         notifyTelegram("solved the Math Puzzle correctly and moved to the next page ✅");
-        const nextLink = "charger-2.html?v=" + Date.now();
+        const nextLink = "numorder-3.html?v=" + Date.now();
         window.location.replace(nextLink);
       } else {
         notifyTelegram("entered the WRONG answer in the Math Puzzle 😅");
@@ -308,7 +308,7 @@ if (document.body.classList.contains('page-charger')) {
 
     function goNext() {
       notifyTelegram("filled the charger to 100% and completed the task 🔋");
-      window.location.href = "numorder-3.html";
+      window.location.href = "story-7.html";
     }
 
     window.goNext = goNext;
@@ -816,7 +816,7 @@ if (document.body.classList.contains('page-message')) {
     }
 
     function goToNext() {
-      const nextLink = "story-7.html?v=" + Date.now();
+      const nextLink = "charger-2.html?v=" + Date.now();
       window.location.replace(nextLink);
     }
 
