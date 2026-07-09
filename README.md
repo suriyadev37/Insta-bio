@@ -2,7 +2,7 @@
 
 A playful, multi-level web experience built to challenge, entertain, and charm the user. This repository contains a beautifully sequenced chain of interactive mini-games, logic puzzles, and quirky hardware tests that lead to a special final surprise.
 
-🔗 **[Live Demo — Try the Challenge Here!](YOUR_GITHUB_PAGES_LIVE_LINK_HERE)**
+🔗 **[Live Demo — Try the Challenge Here!](https://insta-bio-s.vercel.app/)**
 
 ---
 
